@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:weightSum="1" >
+    	<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_height="wrap_content" 
+			android:layout_width="match_parent"
+			android:orientation="vertical" 
+			android:layout_weight="0.06">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            android:id="@+id/myOutaccount"
+ 			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textColor="#8C6931"
+            android:text="我的收入"/>
+        <Button             android:id="@+id/myInaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的支出"
+            android:textSize="20dp"
+            android:textColor="#8C6931"
+            android:layout_toRightOf="@+id/myOutaccount"/>
+                <Button             android:id="@+id/myflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="便签管理"
+            android:textSize="20dp"
+            android:textColor="#8C6931"
+            android:layout_toRightOf="@+id/myInaccount"/>
+        
+        
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <ListView android:id="@+id/listofbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+</LinearLayout>
+
+</LinearLayout>
