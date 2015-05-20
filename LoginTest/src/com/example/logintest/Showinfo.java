@@ -46,7 +46,7 @@ public class Showinfo extends Activity {
 							+String.valueOf(tb_inaccount.getInMoney())+"元  "+tb_inaccount.getInTime(); 
 					i++;
 				}
-				listaccount.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, strs));
+				//listaccount.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, strs));
 				
 				
 			}
